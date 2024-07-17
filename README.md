@@ -1,4 +1,4 @@
-[1. Архитектура приложения](#Архитектура-приложения)
+[1. Архитектура приложения](#1-Архитектура-приложения)
 
 
 dasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasas
