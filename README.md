@@ -1,4 +1,4 @@
-[1. Архитектура приложения](#1-Архитектура-приложения)
+[1.1 :Архитектура приложения](#11-:Архитектура-приложения)
 
 
 dasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasas
@@ -57,4 +57,4 @@ sasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasasas
 
 
 
-# 1. Архитектура приложения
+# 1.1 :Архитектура приложения
