@@ -10,7 +10,6 @@ class UpsertTaskWithValidationUseCase(
     private val taskRepository: TaskRepository,
     private val setAlarmForNotification: SetAlarmForNotification
 ) {
-    @RequiresApi(Build.VERSION_CODES.O)
     suspend operator fun invoke(taskDomain: TaskDomain): Result<Int> {
         if (taskDomain.name.isEmpty()) {
             return Result.failure(Exception("Введите название задачи"))
@@ -22,7 +21,7 @@ class UpsertTaskWithValidationUseCase(
             return Result.failure(Exception("Выберете приоритет задачи"))
         }
         taskRepository.upsertTask(taskDomain)
-        setAlarmForNotification(, taskDomain.deadline)
+//        setAlarmForNotification(, taskDomain.deadline)
         return Result.success(0)
     }
 }

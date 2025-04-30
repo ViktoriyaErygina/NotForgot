@@ -7,6 +7,7 @@ import com.example.notforgot.domain.repositories.TaskRepository
 import com.example.notforgot.domain.usecases.DeleteTaskUseCase
 import com.example.notforgot.domain.usecases.GetAllTasksAsFlowUseCase
 import com.example.notforgot.domain.usecases.GetTaskByIdUseCase
+import com.example.notforgot.domain.usecases.SetAlarmForNotification
 import com.example.notforgot.domain.usecases.UpsertTaskWithValidationUseCase
 import com.example.notforgot.ui.TaskFeature
 import com.example.notforgot.ui.card.TaskCardViewModel
@@ -22,11 +23,12 @@ val appModule = module {
     single { SavedStateHandle() }
     single<TaskRepository> { TaskRepositoryImpl(get()) }
 
-    factory { UpsertTaskWithValidationUseCase(get()) }
+    factory { UpsertTaskWithValidationUseCase(get(), get()) }
     factory { DeleteTaskUseCase(get()) }
     factory { GetAllTasksAsFlowUseCase(get()) }
     factory { GetTaskByIdUseCase(get()) }
+    factory { SetAlarmForNotification() }
 
-    viewModel { TaskCardViewModel(get(), get(), get()) }
+    viewModel { TaskCardViewModel(get(), get(), get(), get()) }
     viewModel { TasksViewModel(get(), get(), get()) }
 }
