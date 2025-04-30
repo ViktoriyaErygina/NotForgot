@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.NotForgot" parent="android:Theme.Material.Light.NoActionBar" />
+
+    <style name="CustomDatePicker" parent="@android:style/Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:calendarTextColor">@color/important</item>
+        <item name="android:headerBackground">@color/not_urgent</item>
+        <item name="android:headerMonthTextAppearance">@style/CustomDatePickerTextAppearance</item>
+        <item name="android:headerDayOfMonthTextAppearance">@style/CustomDatePickerTextAppearance</item>
+        <item name="android:yearListItemTextAppearance">@style/CustomDatePickerTextAppearance</item>
+        <item name="android:yearListSelectorColor">@color/urgently</item>
+    </style>
+
+    <style name="CustomDatePickerTextAppearance" parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:textColor">@color/urgent_and_unimportant</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

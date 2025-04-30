@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">NotForgot</string>
+    <string name="not_forgot">Not Forgot</string>
+    <string name="relax_image">Relax image</string>
+    <string name="add_task">Add new task</string>
+    <string name="tasks">Задачи</string>
+    <string name="note">Заметка</string>
+    <string name="add_note">Добавить заметку</string>
+    <string name="back">Назад</string>
+    <string name="edit">Редактировать</string>
+    <string name="completed">Выполнено</string>
+    <string name="deadline">Срок выполнения задачи</string>
+    <string name="not_completed">Необходимо сделать</string>
+    <string name="heading">Заголовок</string>
+    <string name="description">Описание</string>
+    <string name="save">Сохранить</string>
+    <string name="select_date">Выбор даты</string>
+    <string name="priority">Приоритет</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="name">Название</string>
+    <string name="before">До</string>
+    <string name="deadline_has_not_been_selected">Срок выполнения не задан</string>
+    <string name="no_tasks">Пока что у вас нет никаких дел. Хорошего отдыха!</string>
+    <string name="arrow_icon_in_drop_down_list_description">Иконка для отображения списка параметров</string>
+</resources>
